@@ -1,0 +1,161 @@
+###########################################################
+
+# EMSuit config file
+# Author: Zhang Qiang
+###########################################################
+# THIS IS CONFIG FILE FOR EMSUIT
+# THE LINE BEGINNING WITH '#' IS COMMENT LINE
+###########################################################
+# SUPPORTTED SOLVER:
+#   1.  EFIE                    State: OK
+#   2.  MFIE                    State: OK
+#   3.  CFIE                    State: OK
+#   4.  ACA_CFIE                State: OK
+#   5.  CBFM (CFIE)             State: OK
+#   6.  EICBFM (CFIE)           State: OK
+#   7.  ACA_EICBFM (CFIE)       State: OK
+#   8.  PMCHW                   State: OK
+#   9.  EFIE_PMCHW              State: [Scattering Only]
+#   10. EICBFM_PMCHW            State: OK
+#   11. AIM (EFIE)              State: OK
+#   12. DDM (CFIE)              State: OK
+#   13. ACA_DDM (CFIE)          State: OK
+#   14. PO                      State: OK
+#   15. FMM (CFIE)              State: OK
+#   16. MLFMA (CFIE)            State: OK
+#   17. IEDG (CFIE)             State: OK
+#   18. IEDG_MLFMA (CFIE)       State: OK
+#   19. IP_IE_DDM (CFIE)        State: OK
+#   20. FastWT (CFIE)           State: OK
+#==========================================================
+### [GLOBAL]
+### Select Solver Which State is OK
+    EMSolver:  HC
+### [GLOBAL]
+### Result Type (1). BistaticRCS (2). MonostaticRCS (2). Radiation
+    result_type: BistaticRCS 
+### [GLOBAL]
+### The Absolute Path of Mesh File
+    mesh_path:   C:\Users\Camille\Desktop\cyliner_hc2.nas
+### [Bistatic][Monostatic]
+### Incident Field Configuration
+### Frequency Unit: Hz
+### Pole Unit: degree
+    frequency:   5e8
+    pole:   0
+
+### [Bistatic]
+### Incident Field Direction
+### Theta/Phi Unit: degree
+    theta:  0
+    phi:    0    
+
+### [Bistatic][Monostatic]
+### Scattering Field Configuration
+### All Unit: Degree
+    theta_from:     -180
+    theta_to:       180
+    theta_delta:    1
+    phi_from:       0
+    phi_to:         90
+    phi_delta:      90
+
+### [Radiation]
+### Radiation Field Configuration
+### EPlane:   XZ Plane
+### HPlane:   YZ Plane
+### HHPlane:  XY Plane
+### "false" is Unset, "true" is Set
+    E_Plane:    true
+    H_Plane:    true
+    HH_Plane:   true
+
+
+### [CFIE]
+### Combined Coefficient: alpha * EFIE + (1 - alpha) * MFIE
+    alpha:  0.5
+
+### [ACA_CFIE]
+### ACA Box Length (Electrical Length)
+### EDM (Equivalent Dipole Method) Acceleration Option: (1).Set is 'true' (2). Unset is 'false'
+    aca_box_length: 0.5
+    edm_acceleration: false
+    
+### [ACA_*]
+### Threshold is Relative Tolerance (Also for SVD if SVD is applied) [Recommended Value: <= 0.01]
+    aca_threshold: 5e-3
+
+### [CBFM][EICBFM]
+### The Maximum Number of Box in X/Y/Z Axis
+    max_box_num: 4
+
+### [EICBFM]
+### The Maximum Number of Box in X/Y/Z Direction
+### Poles Number of Incidant Wave (1 or 2)
+### The Spacing of Sample Point (Unit: degree)
+    polarization:   2
+    sample_spacing: 10
+
+### [PMCHW]
+### Relative Dielectric Parameter
+    epsilon1:   1
+    epsilon2:   1
+    mu1:        1
+    mu2:        1
+
+### [AIM]
+### All Distances are Electrical Length
+    x_spacing:      0.08
+    y_spacing:      0.08
+    z_spacing:      0.08
+    near_threshold: 0.2
+
+### [MLFMA][IEDG][IEDG_MLFMA][IP_IE_DDM][FastWT]
+### Preconditioner Option: (1).Set is 'true' (2).Unset is 'false'
+    preconditioning: true
+
+### [MLFMA][IEDG_MLFMA][FastWT]
+### Sparse Approximation Inverse (SAI) Preconditioner
+### The Preconditioning Parameter (row/col_threshold >= 0.87)
+    row_threshold: 0.9
+    col_threshold: 0.87
+
+### [AIM][DDM][FMM][MLFMA][IEDG_MLFMA][IP_IE_DDM][FastWT]
+### The Iteration Threshold
+### The Maximum Iterative Number
+    iteration_threshold:    3e-3
+    max_iteration_number:   1000
+
+### [FMM]
+### FMM Box Length (Electrical Length) [Recommended Value: 0.25 <= length <= 0.5]
+    fmm_box_length: 0.4
+
+### [MLFMA][IEDG_MLFMA][FastWT]
+### The Maximum Electrical Length at Finest Level [Recommended Value: 0.25 <= threshold <= 0.5]
+    mlfma_box_threshold: 0.5
+
+### [IEDG]
+### The type of trial function: (1).half_RWG (2).full_RWG
+    basis_function_type: half_RWG
+
+### [IEDG][IEDG_MLFMA][IP_IE_DDM][FastWT]
+### Stabilization Parameter 
+### Average Size of Mesh (the size is actual length)
+### IEDG: beta = stabilization_factor / average_size [Recommended Value: half_RWG: 0.1, full_RWG: 10]
+### IP_IE_DDM: beta = stabilization_factor * |log(average_size)|
+    stabilization_factor: 0.1
+    average_size: 0.06467
+
+### [IP_IE_DDM]
+### DDM Policy Option: (1).less_time (2).less_memory
+    ddm_policy: less_time
+
+### [IP_IE_DDM][FastWT]
+### Multithreading Option
+### Sequence: value = 1
+### Parallel: value > 1
+    thread_number: 3
+
+### [FastWT]
+### The Factor of Task Packets: task_packet = task_factor * working_thread
+    task_factor: 4

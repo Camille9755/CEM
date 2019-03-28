@@ -1,0 +1,94 @@
+============================================================
+Config Information
+------------------------------
+  -> EM Solver:               MLFMA
+  -> Result type:             BistaticRCS
+  -> Incidence:               
+    => frequency:             3e8 (Hz)
+    => theta:                 0 (degree)
+    => phi:                   0 (degree)
+    => pole:                  0 (degree)
+  -> Scattering:              
+    => theta from:            -180 (degree)
+    => theta to:              180 (degree)
+    => theta delta:           1 (degree)
+    => phi from:              0 (degree)
+    => phi to:                90 (degree)
+    => phi delta:             90 (degree)
+  -> Mesh path:               C:\Users\Camille\Desktop\CEM\Test\missile_10092.nas
+  -> Combined coefficient:    0.5
+  -> Iteration threshold:     3e-3
+  -> Max iteration number:    1000
+  -> Preconditioning:         true
+  -> Row threshold:           0.9
+  -> Column threshold:        0.87
+  -> MLFMA box threshold:     0.5 (wavelength)
+  -> Thread number:           3
+  -> Task factor:             4
+============================================================
+Mesh Information
+------------------------------
+  -> Vertices:                5048
+  -> Triangles:               10092
+  -> Minimum position:        (-1.20,-0.25,-0.25)
+  -> Maximum position:        (1.50,0.25,0.25)
+  -> Mesh size:               2.70x0.51x0.51
+  -> Memory detail:           
+    => vertex:                0 MB 
+    => triangle:              0 MB 
+============================================================
+CommonEdge Information
+------------------------------
+  -> Total edges:             15138
+  -> Total RWGs:              15138
+  -> Memory prediction:       1748 MB (1GB:724MB)
+  -> Memory detail:           
+    => RWG:                   0 MB 
+============================================================
+MLFMA Boundary Information:
+------------------------------
+  -> Minimum position:        (-1.25,-1.40,-1.40)
+  -> Maximum position:        (1.55,1.40,1.40)
+  -> MLFMA layers:            4
+  -> Distance between boxes:  0.35 (0.35*wavelength)
+  -> Total box number:        512
+============================================================
+Thread Pool Information
+------------------------------
+  -> Hardware core number:    4
+  -> Running thread number:   3
+============================================================
+MLFMA Level Information
+------------------------------
+  -> Number of level:         4
+  -> Number of valid boxes:   
+    => level 1 :              8
+    => level 2 :              16
+    => level 3 :              32
+============================================================
+Task Assignment Information
+------------------------------
+  -> Task packet number:      12
+  -> Task distribution:       Boxes in per task packet
+    => level 2 :              max: 2   min: 1   total: 16
+    => level 3 :              max: 3   min: 2   total: 32
+============================================================
+MLFMA Information
+------------------------------
+  -> Number of multipoles:    
+    => level 2 :              19
+    => level 3 :              13
+  -> Average per box:         473
+  -> Number of near:          84060426
+  -> Number of precondition:  20635717
+  -> Sparse rate:             37%
+  -> Interpolation:           0 MB 
+    => Auxiliary data:        0 MB 
+  -> Near impedance:          641 MB 
+    => Auxiliary data:        1282 MB (1GB:258MB)
+  -> Transfer:                1 MB 
+  -> Rad and Recv:            234 MB 
+  -> Preconditioner:          157 MB 
+    => Auxiliary data:        314 MB 
+  -> Total memory:            2629 MB (2GB:581MB)
+  -> Saved memory:            -881 MB 

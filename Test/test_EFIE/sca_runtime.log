@@ -1,0 +1,46 @@
+============================================================
+Config Information
+------------------------------
+  -> EM Solver:               EFIE
+  -> Result type:             BistaticRCS
+  -> Incidence:               
+    => frequency:             3e8 (Hz)
+    => theta:                 0 (degree)
+    => phi:                   0 (degree)
+    => pole:                  0 (degree)
+  -> Scattering:              
+    => theta from:            -180 (degree)
+    => theta to:              180 (degree)
+    => theta delta:           1 (degree)
+    => phi from:              0 (degree)
+    => phi to:                90 (degree)
+    => phi delta:             90 (degree)
+  -> Mesh path:               C:\Users\Camille\Desktop\CEM\Test\test.nas
+============================================================
+Mesh Information
+------------------------------
+  -> Vertices:                812
+  -> Triangles:               1620
+  -> Minimum position:        (0.00,0.00,0.00)
+  -> Maximum position:        (1.00,1.00,1.00)
+  -> Mesh size:               1.00x1.00x1.00
+  -> Memory detail:           
+    => vertex:                0 MB 
+    => triangle:              0 MB 
+============================================================
+CommonEdge Information
+------------------------------
+  -> Total edges:             2430
+  -> Total RWGs:              2430
+  -> Memory prediction:       45 MB 
+  -> Memory detail:           
+    => RWG:                   0 MB 
+============================================================
+Time Information
+------------------------------
+Time of init:                          632 ms     (0h:0m:0s)
+Time of fillZ:                      379636 ms    (0h:6m:19s)
+Time of fillV:                         135 ms     (0h:0m:0s)
+Time of solve:                        5170 ms     (0h:0m:5s)
+Time of getBistaticRCS:              87107 ms    (0h:1m:27s)
+Total time:                         472699 ms    (0h:7m:52s)

@@ -1,0 +1,70 @@
+============================================================
+MLFMA Level Information
+------------------------------
+  -> Number of level:         4
+  -> Number of valid boxes:   
+    => level 1 :              8
+    => level 2 :              16
+    => level 3 :              32
+============================================================
+Detail of level box: 
+------------------------------
+  -> level 1 :
+    => box 1       :    child: 2    near: 8      far: 0      unknown: 1918
+    => box 2       :    child: 2    near: 8      far: 0      unknown: 1981
+    => box 3       :    child: 2    near: 8      far: 0      unknown: 1924
+    => box 4       :    child: 2    near: 8      far: 0      unknown: 1943
+    => box 5       :    child: 2    near: 8      far: 0      unknown: 1888
+    => box 6       :    child: 2    near: 8      far: 0      unknown: 1843
+    => box 7       :    child: 2    near: 8      far: 0      unknown: 1862
+    => box 8       :    child: 2    near: 8      far: 0      unknown: 1779
+  -> level 2 :
+    => box 1       :    child: 2    near: 8      far: 8      unknown: 1451
+    => box 2       :    child: 2    near: 12     far: 4      unknown: 467
+    => box 3       :    child: 2    near: 8      far: 8      unknown: 1487
+    => box 4       :    child: 2    near: 12     far: 4      unknown: 494
+    => box 5       :    child: 2    near: 8      far: 8      unknown: 1492
+    => box 6       :    child: 2    near: 12     far: 4      unknown: 432
+    => box 7       :    child: 2    near: 8      far: 8      unknown: 1488
+    => box 8       :    child: 2    near: 12     far: 4      unknown: 455
+    => box 9       :    child: 2    near: 12     far: 4      unknown: 528
+    => box 10      :    child: 2    near: 8      far: 8      unknown: 1360
+    => box 11      :    child: 2    near: 12     far: 4      unknown: 537
+    => box 12      :    child: 2    near: 8      far: 8      unknown: 1306
+    => box 13      :    child: 2    near: 12     far: 4      unknown: 547
+    => box 14      :    child: 2    near: 8      far: 8      unknown: 1315
+    => box 15      :    child: 2    near: 12     far: 4      unknown: 517
+    => box 16      :    child: 2    near: 8      far: 8      unknown: 1262
+  -> level 3 :
+    => box 1       :    child: 0    near: 8      far: 8      unknown: 825
+    => box 2       :    child: 0    near: 12     far: 4      unknown: 626
+    => box 3       :    child: 0    near: 12     far: 12     unknown: 222
+    => box 4       :    child: 0    near: 12     far: 12     unknown: 245
+    => box 5       :    child: 0    near: 8      far: 8      unknown: 848
+    => box 6       :    child: 0    near: 12     far: 4      unknown: 639
+    => box 7       :    child: 0    near: 12     far: 12     unknown: 246
+    => box 8       :    child: 0    near: 12     far: 12     unknown: 248
+    => box 9       :    child: 0    near: 8      far: 8      unknown: 848
+    => box 10      :    child: 0    near: 12     far: 4      unknown: 644
+    => box 11      :    child: 0    near: 12     far: 12     unknown: 222
+    => box 12      :    child: 0    near: 12     far: 12     unknown: 210
+    => box 13      :    child: 0    near: 8      far: 8      unknown: 836
+    => box 14      :    child: 0    near: 12     far: 4      unknown: 652
+    => box 15      :    child: 0    near: 12     far: 12     unknown: 221
+    => box 16      :    child: 0    near: 12     far: 12     unknown: 234
+    => box 17      :    child: 0    near: 12     far: 12     unknown: 263
+    => box 18      :    child: 0    near: 12     far: 12     unknown: 265
+    => box 19      :    child: 0    near: 12     far: 4      unknown: 826
+    => box 20      :    child: 0    near: 8      far: 8      unknown: 534
+    => box 21      :    child: 0    near: 12     far: 12     unknown: 258
+    => box 22      :    child: 0    near: 12     far: 12     unknown: 279
+    => box 23      :    child: 0    near: 12     far: 4      unknown: 796
+    => box 24      :    child: 0    near: 8      far: 8      unknown: 510
+    => box 25      :    child: 0    near: 12     far: 12     unknown: 265
+    => box 26      :    child: 0    near: 12     far: 12     unknown: 282
+    => box 27      :    child: 0    near: 12     far: 4      unknown: 802
+    => box 28      :    child: 0    near: 8      far: 8      unknown: 513
+    => box 29      :    child: 0    near: 12     far: 12     unknown: 248
+    => box 30      :    child: 0    near: 12     far: 12     unknown: 269
+    => box 31      :    child: 0    near: 12     far: 4      unknown: 771
+    => box 32      :    child: 0    near: 8      far: 8      unknown: 491
